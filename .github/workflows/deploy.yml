@@ -25,5 +25,6 @@ jobs:
           rsync -avz --delete \
             --exclude '.git/' \
             --exclude '.github/' \
+--exclude 'hw1/report.html' \
             ./ \
             "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/var/www/jennikacse135.site/html/"
